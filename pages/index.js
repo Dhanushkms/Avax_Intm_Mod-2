@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import { ethers } from "ethers";
 
-const contractAddress = "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266"; 
+const contractAddress = "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266";
 
-const atm_abi = [ 
+const atm_abi = [
   {
     "inputs": [
       {
@@ -109,6 +109,7 @@ export default function HomePage() {
   const [result, setResult] = useState(0);
   const [currentTime, setCurrentTime] = useState("");
   const [currentDate, setCurrentDate] = useState("");
+  const [transactionStatus, setTransactionStatus] = useState("");
 
   const checkWallet = async () => {
     if (window.ethereum) {
@@ -130,25 +131,27 @@ export default function HomePage() {
     const provider = new ethers.providers.Web3Provider(window.ethereum);
     const signer = provider.getSigner();
     const contract = new ethers.Contract(contractAddress, atm_abi, signer);
-    const transaction = await contract.deposit(inputA, { value: inputA });
-    await transaction.wait();
-    getBalance();
+    try {
+      const transaction = await contract.deposit(inputA, { value: inputA });
+      await transaction.wait();
+      setTransactionStatus("Transaction successful");
+      getBalance();
+    } catch (error) {
+      setTransactionStatus("Transaction failed");
+    }
   };
 
   const withdraw = async () => {
     const provider = new ethers.providers.Web3Provider(window.ethereum);
     const signer = provider.getSigner();
     const contract = new ethers.Contract(contractAddress, atm_abi, signer);
-    const transaction = await contract.withdraw(inputB);
-    await transaction.wait();
-    getBalance();
-  };
-
-  const calculateResult = (operator) => {
-    if (operator === "+") {
-      setResult(parseFloat(inputA) + parseFloat(inputB));
-    } else if (operator === "-") {
-      setResult(parseFloat(inputA) - parseFloat(inputB));
+    try {
+      const transaction = await contract.withdraw(inputB);
+      await transaction.wait();
+      setTransactionStatus("Transaction successful");
+      getBalance();
+    } catch (error) {
+      setTransactionStatus("Transaction failed");
     }
   };
 
@@ -167,7 +170,7 @@ export default function HomePage() {
     <main className="container">
       <header>
         <h1>Welcome!</h1>
-        <h2>Ethereum Wallet</h2>
+        <h2>DHANUSH KM</h2>
       </header>
       {account ? (
         <div>
@@ -200,32 +203,7 @@ export default function HomePage() {
       )}
 
       <div>
-        <h2>Crypto Calculator</h2>
-        <p>Result: {result}</p>
-
-        <input
-          type="number"
-          placeholder="Enter ETH"
-          value={inputA}
-          onChange={(e) => setInputA(e.target.value)}
-        />
-
-        <input
-          type="number"
-          placeholder="Enter ETH"
-          value={inputB}
-          onChange={(e) => setInputB(e.target.value)}
-        />
-        <br />
-
-        <p>Perform Operation:</p>
-
-        <button style={{ backgroundColor: "grey" }} onClick={() => calculateResult("+")}>
-          +
-        </button>
-        <button style={{ backgroundColor: "grey" }} onClick={() => calculateResult("-")}>
-          -
-        </button>
+        <p>Transaction Status: {transactionStatus}</p>
       </div>
       <div>
         <p>Current Date: {currentDate}</p>
@@ -239,4 +217,3 @@ export default function HomePage() {
     </main>
   );
 }
-
