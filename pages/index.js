@@ -3,7 +3,7 @@ import { ethers } from "ethers";
 
 const contractAddress = "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266"; 
 
-const atm_abi = [ // Replace with the updated ABI
+const atm_abi = [ 
   {
     "inputs": [
       {
