@@ -25,14 +25,16 @@ Hardhat
    - Currency Symbol: GO or ETH
 5. Click on "Save" to add the Hardhat network to MetaMask.
 
-### Follow these steps to get the project up and running 
- Inside the project directory, in the terminal type: npm i
-2. Open two additional terminals in your VS code
-3. In the second terminal type: npx hardhat node
-4. In the third terminal, type: npx hardhat run --network localhost scripts/deploy.js
-5. Back in the first terminal, type npm run dev to launch the front-end.
 
-After this, the project will be running on your localhost. 
+### Follow these steps to get the project up and running 🏗️
+
+1. Download or clone the project.
+2. Install the dependencies by running `npm install` in the first terminal.
+3. Start the local blockchain using Hardhat by running by running in the second terminal  `npx hardhat node`.
+4. Open new terminal and deploy the Assesment  contract  in third terminal `npx hardhat run --network localhost scripts/deploy.js`.
+5. Start the development server by running `npm run dev` back in first terminal.
+6. After this, the project will be running on your localhost.
+
 ## Typically at http://localhost:3000/
 
 
