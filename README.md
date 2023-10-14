@@ -41,7 +41,9 @@ Hardhat
 
 ## Project view 
 
-## https://github.com/Dhanushkms/Avax_Intm_Mod-2/blob/main/Screenshot%202023-10-14%20172149.png
+https://github.com/Dhanushkms/Avax_Intm_Mod-2/blob/6ddd8124cc7e9025df525b689d9a787ada325bac/Screenshot%202023-10-14%20172149.png
+
+
 ## Usage 
 
 **To use the application, follow these instructions:**
