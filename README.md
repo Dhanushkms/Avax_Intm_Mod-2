@@ -8,10 +8,10 @@ This project is a decentralized Ethereum bank application that allows users to d
 
 To get started with this project, you will need to install the following dependencies:
 
-Node.js
-npm
-MetaMask
-Hardhat
+Node.js,
+npm,
+MetaMask,
+Hardhat,
 
 ### Configure MetaMask to use the Hardhat node 
 
