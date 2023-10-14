@@ -26,7 +26,7 @@ Hardhat
 5. Click on "Save" to add the Hardhat network to MetaMask.
 
 
-### Follow these steps to get the project up and running 🏗️
+### Follow these steps to get the project up and running 
 
 1. Download or clone the project.
 2. Install the dependencies by running `npm install` in the first terminal.
@@ -51,6 +51,7 @@ Hardhat
 ## Authors
 
 Dhanush km
+
 dhamushkm@gmail.com
 
 ## License
