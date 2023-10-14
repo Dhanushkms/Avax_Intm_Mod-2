@@ -38,6 +38,10 @@ Hardhat
 ## Typically at http://localhost:3000/
 
 
+
+## Project view 
+
+## https://github.com/Dhanushkms/Avax_Intm_Mod-2/blob/main/Screenshot%202023-10-14%20172149.png
 ## Usage 
 
 **To use the application, follow these instructions:**
@@ -47,6 +51,7 @@ Hardhat
 3. Click the "Deposit"  or "Withdraw" button to initiate the  Particular transaction.
 4. Confirm the transaction in MetaMask.
 5. The transaction details will be logged to the console, and the account balance will be updated.
+
 
 ## Authors
 
