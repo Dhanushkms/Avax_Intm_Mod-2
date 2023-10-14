@@ -46,38 +46,31 @@ Feel free to explore the provided links to learn more about each technology. �
 4. Click on "Import" to import the account into MetaMask.
 5. Repeat the above steps to add more accounts for testing purposes.
 
-> If you need detailed instructions or visual guidance, you can refer to this step-by-step guide on [how to use MetaMask with a Hardhat node](https://support.chainstack.com/hc/en-us/articles/4408642503449-Using-MetaMask-with-a-Hardhat-node).
-
 
 ## Usage 🪜
 
 **To use the application, follow these instructions:**
 
 1. After connecting MetaMask to the Hardhat local network, connect your wallet with the application
-2. Click on Transfer Funds and fill in the recipient's address and the amount you want to transfer.
-3. Click the "Transfer" button to initiate the transaction.
+2. Enter the amount of ETH you want to Deposit
+3. Click the "Deposit"  button to initiate the transaction.
 4. Confirm the transaction in MetaMask.
 5. The transaction details will be logged to the console, and the account balance will be updated.
-
-**You can also personalize your account name:**
-
-1. Enter a new name in the input field.
-2. Click the "Update Name" button to set the new account name.
-3. Confirm the transaction in MetaMask.
-4. The account name will be updated, and the change will be reflected in the account details.
+6. Follow the similiar steps to Withdraw ETH
 
 ## Contract Details 🔗
 
-The smart contract used in this project is named `Bank` present inside the `contracts/Bank.sol` file. It allows users to set an account name and transfer funds. The contract emits events for successful transfers and name updates.
+The smart contract used in this project is named `Assesment` present inside the `contracts/Assesment.sol` file. It allows users to Deposit and Withdraw Funds and transfer Ownership. 
 
 ## Configuration ⚙️
 
 The `hardhat.config.js` file is used for configuring the Hardhat development environment. It specifies the Solidity version and required libraries to deploy contracts on the hardhat node.
 
-## Scripts 📜
-
-The `deploy.js` script, located in the `scripts` folder, is used to deploy the Bank contract. It uses Hardhat's `ethers` library to interact with the blockchain. This script is executed with the `npx hardhat run` command.
+## Scripts 
+The `deploy.js` script, located in the `scripts` folder, is used to deploy the Assesment contract. It uses Hardhat's `ethers` library to interact with the blockchain. This script is executed with the `npx hardhat run` command.
 
 ---
 
-This project is open-source !😉
+## Author
+Dhanush K M
+dhamushkm@gmail.com
