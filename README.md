@@ -2,7 +2,7 @@
 ## Smart Contract Management
 ## Description
 
-This project is a decentralized Ethereum bank application that allows users to deposit and withdraw funds. It is built using Solidity smart contracts, Ethers.js, MetaMask, and Hardhat.
+This project is a decentralized Ethereum wallet  application that allows users to deposit and withdraw funds. It is built using Solidity smart contracts, Ethers.js, MetaMask, and Hardhat.
 
 ## Getting Started
 
@@ -11,7 +11,7 @@ To get started with this project, you will need to install the following depende
 Node.js,
 npm,
 MetaMask,
-Hardhat,
+Hardhat
 
 ### Configure MetaMask to use the Hardhat node 
 
