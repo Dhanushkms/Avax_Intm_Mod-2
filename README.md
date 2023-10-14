@@ -44,7 +44,7 @@ Hardhat
 
 1. After connecting MetaMask to the Hardhat local network, connect your wallet with the application
 2. Enter the Amount of ETH  you want to Deposit and the amount of ETH you want to Withdraw.
-3. Click the "Deposit"  or "Withdraw" button to initiate the transaction.
+3. Click the "Deposit"  or "Withdraw" button to initiate the  Particular transaction.
 4. Confirm the transaction in MetaMask.
 5. The transaction details will be logged to the console, and the account balance will be updated.
 
